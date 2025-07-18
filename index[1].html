@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Desalinated Water Vending Machine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Desalinated Water Vending Machine</h1>
+  <div class="container">
+    <div class="machine">
+      <h2>Insert Coin/Card</h2>
+      <button onclick="insertCoin()">Insert Coin</button>
+      <button onclick="insertCard()">Swipe Card</button>
+
+      <h3>Status: <span id="status">Waiting for input...</span></h3>
+
+      <div id="process" class="hidden">
+        <h3>Purification Steps</h3>
+        <ol>
+          <li id="step1">Water Source ➜</li>
+          <li id="step2">Pre-treatment Filters ➜</li>
+          <li id="step3">Reverse Osmosis ➜</li>
+          <li id="step4">UV Purification ➜</li>
+          <li id="step5">Storage Tank ➜</li>
+          <li id="step6">Dispensing Unit ✅</li>
+        </ol>
+        <button onclick="dispense()">Dispense Water</button>
+      </div>
+
+      <p id="result" class="hidden">💧 Clean water dispensed! Thank you!</p>
+    </div>
+
+    <div class="info">
+      <h2>Machine Benefits</h2>
+      <ul>
+        <li>✅ Affordable & Automated</li>
+        <li>✅ Safe Drinking Water</li>
+        <li>✅ Plastic Waste Reduction</li>
+        <li>✅ Future Ready (Solar + IoT)</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
